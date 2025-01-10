@@ -1,50 +1,9 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  base:
-  - {t: TAB, h: Ctl+Sft+ LALT}
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '-'
-  - LSHIFT
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - LEFT CONTROL
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - LEFT ALT
-  - LEFT GUI
-  - nav
-  - BSPC
-  - SPACE
-  - symbols
-  - ENTER
-  symbols:
-  - {t: ▽, type: trans}
+  BASE: [TAB, Q, W, E, R, T, Y, U, I, O, P, ESC, LSHIFT, A, S, D, F, G, H, J, K, L, ;, '''', LEFT CONTROL, Z, X, C, V, B, N, M, ',', ., /, LEFT ALT, LEFT GUI, NAV,
+    BSPC, SPACE, SYMBOLS, ENTER]
+  SYMBOLS:
+  - ESC
   - '1'
   - '2'
   - '3'
@@ -55,8 +14,8 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
-  - ESC
+  - BACKSPACE
+  - Alt+TAB
   - '!'
   - '@'
   - '#'
@@ -68,7 +27,7 @@ layers:
   - (
   - )
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+TAB
   - '`'
   - '~'
   - '|'
@@ -86,50 +45,50 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  nav:
-  - Gui+Ctl+ TAB
+  NAV:
+  - '&bl BL_TOG'
+  - '&bl BL_INC'
+  - '&bl BL_DEC'
+  - '&bl BL_CYCLE'
+  - '&bl BL_SET 100'
   - {t: ▽, type: trans}
-  - Gui+ [
-  - Sft+ TAB
-  - TAB
-  - Gui+ ]
-  - Alt+ LEFT
-  - Alt+ DOWN
-  - Alt+ UP
-  - Alt+ RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ESC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SCROLL DOWN
-  - SCROLL UP
-  - {t: ▽, type: trans}
+  - Alt+LEFT
+  - Alt+DOWN
+  - Alt+UP
+  - Alt+RIGHT
+  - HOME
+  - PAGE UP
+  - RGB TOG
+  - RGB HUI
+  - RGB HUD
+  - RGB SAI
+  - RGB SAD
+  - RGB BRI
   - LEFT
   - DOWN
   - UP
   - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - PG DN
-  - PG UP
   - END
-  - Gui+ LEFT
-  - Gui+ DOWN
-  - Gui+ UP
-  - Gui+ RIGHT
-  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - RGB BRD
+  - RGB SPI
+  - RGB SPD
+  - RGB EFF
+  - RGB EFR
+  - RGB COLOR HSB(110,91,61)
+  - Gui+LEFT
+  - Gui+DOWN
+  - Gui+UP
+  - Gui+RIGHT
+  - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - Ctl+Gui+ SPACE
+  - Ctl+Gui+SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  extended:
+  EXT:
   - {t: ▽, type: trans}
   - F1
   - F2
